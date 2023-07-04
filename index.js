@@ -9,7 +9,6 @@ client.on("ready", () => {
 
 client.on("messageCreate", message => {
     if (message.content.includes("!automod")) {
-        if (message.author.id != "сюда-ваш-USER-ID") return;//Эта проверка что бы только вы могли использовать команду если хотите что бы любой мог использовать просто удалите эту строку!
         message.guild.autoModerationRules.create({
             name: `AutoMod-1`,
             creatorId: `820361590826205215`,
